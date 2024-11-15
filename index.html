@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق الاختبارات</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main Header -->
+  <header class="header">
+    <h1>تطبيق الاختبارات</h1>
+  </header>
+
+  <!-- Home Page -->
+  <main class="homepage">
+    <section class="quiz-list">
+      <h2>اختر اختباراً</h2>
+      <div class="quiz-card">
+        <h3>اختبار المعرفة العامة</h3>
+        <p>عدد الأسئلة: 10</p>
+        <p>الوقت المقدر: 5 دقائق</p>
+        <p>المستوى: سهل</p>
+        <button class="start-btn">ابدأ الاختبار</button>
+      </div>
+      <div class="quiz-card">
+        <h3>اختبار الرياضيات</h3>
+        <p>عدد الأسئلة: 15</p>
+        <p>الوقت المقدر: 10 دقائق</p>
+        <p>المستوى: متوسط</p>
+        <button class="start-btn">ابدأ الاختبار</button>
+      </div>
+      <div class="quiz-card">
+        <h3>اختبار البرمجة</h3>
+        <p>عدد الأسئلة: 20</p>
+        <p>الوقت المقدر: 15 دقيقة</p>
+        <p>المستوى: صعب</p>
+        <button class="start-btn">ابدأ الاختبار</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Quiz Interface -->
+  <section class="quiz-interface">
+    <header class="quiz-header">
+      <div class="score">النقاط: <span>0</span></div>
+      <div class="timer">الوقت: <span>60</span> ثانية</div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </header>
+    <div class="question-area">
+      <h2 class="question-text">السؤال هنا</h2>
+      <div class="options">
+        <button class="option">اختيار 1</button>
+        <button class="option">اختيار 2</button>
+        <button class="option">اختيار 3</button>
+        <button class="option">اختيار 4</button>
+      </div>
+    </div>
+    <footer class="quiz-footer">
+      <button class="next-btn">السؤال التالي</button>
+    </footer>
+  </section>
+
+  <!-- Results Page -->
+  <section class="results-page">
+    <h2>نتائج الاختبار</h2>
+    <p>عدد الإجابات الصحيحة: <span id="correct-answers">0</span></p>
+    <p>الوقت المستغرق: <span id="time-taken">0</span> ثانية</p>
+    <button class="retry-btn">إعادة الاختبار</button>
+    <button class="home-btn">العودة إلى الصفحة الرئيسية</button>
+  </section>
+
+
+  <button class="admin-btn" onclick="location.href='admin.html'">لوحة تحكم المشرف</button>
+  <script src="script.js"></script>
+</body>
+</html>
